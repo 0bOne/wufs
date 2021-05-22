@@ -1,6 +1,6 @@
 # wufs tools
 
-Welcome to the Woefully Unused File System Build Utility.
+Welcome to the Woefully Unused File System build tools
 
 ## Purpose 
 * Create a RAW disk image for use in OS development on Bochs or Qemu 
