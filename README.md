@@ -15,7 +15,7 @@ Even if you want to roll your own file system (most OS developers are VERY indep
 
 of course, if you want to create JUST a raw disk image, you don't need this program. Youcan use anything that writes a bunch of bytes into a file in an even number of sectors.
 
-For the chosen few who want to use the WUFS file system I will create a separate readme.
+For the chosen few who want to use the WUFS file system I have added the file "WUFS-descriptors.pdf"
 I would love to hear from anyone who wants to add existing file systems to the script.  The program is written in NodeJS so it is wonderfully transparent and cross-platform.  Time to throw out all those opaque binaries that create file systems.
 
 Designed for Intel emulators and virtual machines.
