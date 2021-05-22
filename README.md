@@ -139,6 +139,36 @@ BLOCKADDR BYTEADDR HEX												                      ASCII
 0010 0002 00002030 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
 ```
 
+## Converting to virtual disk images
+
+For VM environments that don't support raw disk images (or when I don't want to use a raw disk image) I used
+I use QEMUs excellent [qemu-img](https://qemu.readthedocs.io/en/latest/tools/qemu-img.html) tool for this.  Here are a few examples.
+
+* *QEMU* Ironically, perhaps, I use the raw disk image for QEMU, so I can't show you the QCOW coversion command.  However, they are all very similar!
+* *VirtualBox* qemu-img.exe convert -O vdi bootable.raw bootable.vdi
+* *VMWare* qemu-img.exe convert -O vmdk bootable.raw bootable.vmdk
+* *HyperV* qemu-img.exe" convert -O vhdx bootable.raw bootable.vhdx
+
+It simply takes the raw disk image as the input, and generates a disk image compatible with the desired virtual environment. Simple!
+
+With these tools, I can make a change in my loader or kernel source, and have the binary running in an emulator or VM within about 10 seconds, crucial if you are trying to 'hold that thought' while to test a quick change in something as complicated and finicky as an OS.
+
+
+## Acknowldgements and feedback
+This is a build tool created for the RabbieOS Project (currently unpublished). Inspired by Rabbie the Scottish Terrier - who was a very independently-minded friend of mine.
+```
+     //
+ /   =6_.
+ ###// w
+//  \\
+```
+
+Thanks to the awesome folks at [NodeJs](https://nodejs.org/), [Bochs](https://bochs.sourceforge.io/), and [Qemu](https://www.qemu.org/), and all the helpful hints and tips at [OSDev](https://wiki.osdev.org/Main_Page).
+
+If anyone has any bugs, tips, enhancements, or suggestions, please let me know!
+
+
+
 
 
 
