@@ -144,10 +144,10 @@ BLOCKADDR BYTEADDR HEX												                      ASCII
 For VM environments that don't support raw disk images (or when I don't want to use a raw disk image) I used
 I use QEMUs excellent [qemu-img](https://qemu.readthedocs.io/en/latest/tools/qemu-img.html) tool for this.  Here are a few examples.
 
-* *QEMU* Ironically, perhaps, I use the raw disk image for QEMU, so I can't show you the QCOW coversion command.  However, they are all very similar!
-* *VirtualBox* qemu-img.exe convert -O vdi bootable.raw bootable.vdi
-* *VMWare* qemu-img.exe convert -O vmdk bootable.raw bootable.vmdk
-* *HyperV* qemu-img.exe" convert -O vhdx bootable.raw bootable.vhdx
+* **QEMU** Ironically, perhaps, I use the raw disk image for QEMU, so I can't show you the QCOW coversion command.  However, they are all very similar!
+* **VirtualBox** qemu-img.exe convert -O vdi bootable.raw bootable.vdi
+* **VMWare** qemu-img.exe convert -O vmdk bootable.raw bootable.vmdk
+* **HyperV** qemu-img.exe convert -O vhdx bootable.raw bootable.vhdx
 
 It simply takes the raw disk image as the input, and generates a disk image compatible with the desired virtual environment. Simple!
 
